@@ -5,38 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
     <div class="left half">
-
+      <div class="left"></div>
+      <div class="test">
+        <div class="logo"></div>
+        <div class="hey">ODIN</div>
+      </div>
     </div>
     <div class="right half">
-      <div class="third">
+      <div class="third message">
         <div>This is not online service! You know you need something like this in yourlife to help you realize your deepest dreams.</div>
         <div>Sign up now to get started</div>
-        <div>You know you want to.</div>
+        <div class="message3">You know you want to.</div>
       </div>
-      <div class="third">
-        <div>Let's do this!</div>
-        <form action="#" method="get">
-          <div class="form">
-            <div class="col">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="name" id="user_name" name="user_name">
-              </div>
+      <div class="third inputs">
+        <div class="form-title">Let's do this!</div>
+        <form class="form-inputs" id="account-form" action="#" method="get">
+          <div class="col">
+            <div class="form-group">
+              <label for="name">FIRST NAME</label>
+              <input type="name" id="user_name" name="user_name">
             </div>
-            <div class="col">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="name" id="user_name" name="user_name">
-              </div>
+            <div class="form-group">
+              <label for="email">EMAIL</label>
+              <input type="email" id="user_email" name="user_email">
+            </div>
+            <div class="form-group">
+              <label for="password">PASSWORD</label>
+              <input type="password" id="user_password" name="user_password">
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="lastname">LAST NAME</label>
+              <input type="lastname" id="user_lastname" name="user_lastname">
+            </div>
+            <div class="form-group">
+              <label for="phonenumber">PHONE NUMBER</label>
+              <input type="phonenumber" id="user_phonenumber" name="user_phonenumber">
+            </div>
+            <div class="form-group">
+              <label for="password2">COMFIRM PASSWORD</label>
+              <input type="password" id="user_password2" name="user_password2">
             </div>
           </div>
         </form>
       </div>
-      <div class="third"></div>
+      <div class="third">
+        <button class="create-button" type="submit" form="account-form">Create Account</button>
+        <div class="log-in">Already have an account? Log in</div>
+      </div>
     </div>
   </div>
   <script src="./script.js"></script>

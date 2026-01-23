@@ -3,6 +3,19 @@
   padding: 0;
   box-sizing: border-box;
   outline: 2px solid red;
+  font-family: 'Roboto Mono';
+}
+
+@font-face {
+  font-family: 'Norse';
+  src: url('Norsebold.otf');
+}
+
+.roboto-mono {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: bold;
 }
 
 body {
@@ -18,6 +31,18 @@ body {
   width: 1060px;
 }
 
+.message {
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  justify-content: flex-end;
+  padding: 40px 40px;
+}
+
+.message3 {
+  padding: 25px 0;
+}
+
 .left {
   flex-basis: 37%;
   background-image: url("background.avif");
@@ -26,7 +51,6 @@ body {
   background-size: cover;
 }
 
-
 .right {
   flex-basis: 63%;
   display: flex;
@@ -34,22 +58,78 @@ body {
 }
 
 .third {
+  display: flex;
+  flex-direction: column;
   flex: 1;
 }
 
-.form {
+form {
   display: flex;
+  align-items: center;
+}
+
+.form-title {
+  font-family: 'Roboto Mono';
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  flex-basis: 20%;
+  align-items: center;
+  padding-left: 40px;
+}
+
+.form-inputs {
+  padding-right: 120px;
+  font-size: 12px;
+  flex-basis: 80%;
 }
 
 .col {
+  display: flex;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 30px;
   flex: 1;
   display: flex;
   flex-direction: column;
   width: 200px;
+  height: 100%;
+  justify-content: space-between;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
+  /* width: fit-content; */
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 10%;
+}
+
+.test {
+  margin-top: 200px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+
+.logo {
+  flex-basis: 50%;
+  background-image: url('odin-lined.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 150px;
+  position: relative;
+}
+
+.hey {
+  font-size: 80px;
+  font-family: 'Norse';
+  color: white;
+  flex-basis: 50%;
 }
